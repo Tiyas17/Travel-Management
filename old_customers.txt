@@ -1,0 +1,6 @@
+Customers ID: 43
+Name: rhg
+Age: 53
+Mobile No.:  95475646
+Gender: f
+Address: fnc
