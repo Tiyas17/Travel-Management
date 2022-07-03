@@ -68,6 +68,7 @@ class Customers
 {
     public:
     string name="";
+    string fname,lname;
     string gender,adress="";
     int age;
     long long mobno;
@@ -80,8 +81,13 @@ class Customers
     {
         cout<<"Enter Customer ID :";
         cin>>cusID;
-        cout<<"Enter Your Name :";
-        cin>>name;
+        cout<<"Enter Your First Name :";
+        cin>>fname;
+        cout<<"Enter Your Last Name :";
+        cin>>lname;
+        name=name+fname;
+        name+=" ";
+        name+=lname;
         cout<<"Enter Your Age :";
         cin>>age;
         cout<<"Enter Your MobNo :";
@@ -644,21 +650,3 @@ int main(){
    return 0;
 }
 
- /*
- ofstream out("old_customers.txt");
-    out<<"Chalo Bye"<<endl<<"Seriously??";
-    out.close();
-    char c[999];
-    ifstream in("old_customers.txt");
-    {
-        if(!in){
-            cout<<"EROOR";
-        }
-        while(!in.eof())
-        {
-            in.getline(c,999);
-            cout<<c<<endl;
-        }
-        in.close();
-    }
-*/
